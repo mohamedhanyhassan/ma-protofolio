@@ -30,7 +30,42 @@ footer{background:var(--grey);min-height:280px;padding:55px 5vw 35px;color:#ffff
  .sector-card,.sector-card.reveal-ready,.brand-list a,.brand-list a b,.nav-shell nav a,.nav-cta{transition:none!important;transform:none!important}
  .sector-card.reveal-ready{opacity:1!important}
 }
-</style></head><body><main>
+
+/* 2026 editorial redesign */
+:root{--orange:#ff6b35;--black:#10100f;--cream:#f2f0e9;--grey:#a5a39d;--stone:#a5a39d}
+html{scroll-padding-top:88px}body{background:var(--cream);color:var(--black);font-family:Tahoma,Arial,sans-serif}
+.nav-shell{height:78px;position:sticky;top:0;background:rgba(16,16,15,.96);backdrop-filter:blur(14px);border-bottom:1px solid #ffffff22;padding:0 5vw;color:#fff}
+.brand-dot{background:var(--orange)}.brand-mark{font-size:20px}.nav-shell nav{gap:30px}.nav-shell nav a:hover{color:var(--orange)}
+.nav-cta{border-radius:99px;border:1px solid #ffffff55;transition:.25s}.nav-cta:hover{background:var(--orange);border-color:var(--orange);color:var(--black)}
+.hero{min-height:680px;padding:125px 5vw 45px;grid-template-columns:1.3fr .7fr;background:#10100f}
+.hero:after{border-color:#ff6b3599;box-shadow:0 0 100px #ff6b3526}
+.hero-grid{opacity:.08;background-size:100px 100px}
+.kicker{color:var(--orange)}.kicker span{background:var(--orange)}
+.hero h1{font-size:clamp(68px,9vw,140px);letter-spacing:-.075em;line-height:.93}.hero h1 em{color:var(--orange)}
+.proof-orbit{width:340px;height:340px}.proof-orbit strong{font-size:100px}.proof-orbit sup{color:var(--orange)}.orbit{border-color:#ffffff30}.orbit-b{border-color:#ff6b35}
+.hero-stats{border-color:#ffffff22}.hero-stats strong{color:var(--orange)}.hero-stats span{color:#aaa79f}
+.intro{padding:105px 5vw;grid-template-columns:.35fr 1.15fr .7fr;gap:5vw}.section-index{color:#8e8b83}.intro h2,.section-head h2,.meeting-section h2{letter-spacing:-.06em}.intro h2 em,.meeting-section h2 em{color:var(--orange)}
+.work{background:#fffefa;padding:100px 5vw 115px}.section-head{margin-bottom:48px}.section-head h2{font-size:clamp(48px,6vw,82px)}
+.search-box{border-color:#c8c4ba}.search-box span{color:var(--orange)}.search-box input{font-size:13px}
+.sector-grid{gap:12px;border:0;grid-template-columns:repeat(3,minmax(0,1fr))}
+.sector-card{background:#f2f0e9;border:1px solid #e5e1d8;min-height:320px;padding:26px;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s;isolation:isolate}
+.sector-card:before{background:#10100f;transform:translateY(102%);transition:transform .42s cubic-bezier(.2,.8,.2,1);z-index:-1}
+.sector-card:hover{transform:translateY(-6px);box-shadow:0 18px 38px #10100f18;border-color:#10100f}
+.sector-card h3{font-size:24px;letter-spacing:-.04em;margin:42px 0 12px}
+.sector-card p{color:#77746d;font-size:12px;line-height:1.9}
+.card-top span{color:var(--orange)}.card-top small{color:#8d8a82}
+.brand-list{gap:6px}.brand-list a{border-color:#d6d2c8;padding:7px 10px;transition:.2s}
+.brand-list a b{color:var(--orange)}.sector-card:hover h3,.sector-card:hover p,.sector-card:hover .card-top small{color:#fff}
+.sector-card:hover .brand-list a{border-color:#ffffff44;color:#fff}.sector-card:hover .brand-list a:hover{background:var(--orange);border-color:var(--orange);color:#10100f}
+.approach{background:#10100f}.capability-list{border-color:#ffffff24}.capability-list article{border-color:#ffffff24;padding:30px 0}.capability-list article:hover{color:var(--orange);padding-right:14px}.capability-list span{color:var(--orange)}.capability-list p,.section-head.light>p{color:#aaa79f}
+.meeting-section{background:var(--cream);min-height:560px}.principles span{border-color:#d4d0c7;transition:.2s}.principles span:hover{background:#10100f;color:#fff;border-color:#10100f}
+footer{background:#10100f;color:#fff;padding:55px 5vw 35px}.footer-mark .brand-dot{background:var(--orange)}.footer-mark small{color:#aaa79f}.footer-mark+p{font-size:clamp(24px,3vw,38px)}
+.brand-list a:focus-visible,.nav a:focus-visible,.search-box input:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:120px}.hero-proof{align-items:flex-start}.proof-orbit{width:290px;height:290px}.intro{grid-template-columns:1fr}.intro blockquote{margin:15px 0}.sector-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.nav-shell{height:68px;padding:0 20px}.hero,.intro,.work,.approach,.meeting-section{padding-right:22px;padding-left:22px}.hero h1{font-size:clamp(56px,15vw,82px)}.hero-proof{margin-top:30px}.proof-orbit{width:250px;height:250px}.proof-orbit strong{font-size:75px}.sector-grid{grid-template-columns:1fr}.sector-card{min-height:280px}.section-head{gap:25px}.meeting-grid>p{font-size:16px}footer{padding:35px 22px}}
+@media(prefers-reduced-motion:reduce){.sector-card,.sector-card:before,.brand-list a,.nav-cta{transition:none!important;transform:none!important}}
+
+.portfolio-filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.portfolio-filter{border:1px solid #d8d4ca;background:transparent;color:#6f6c64;border-radius:99px;padding:8px 13px;font:10px Tahoma;cursor:pointer;transition:.2s}.portfolio-filter:hover,.portfolio-filter.active{background:#10100f;color:#fff;border-color:#10100f}</style></head><body><main>
 <header class="nav-shell"><div class="brand-mark"><span class="brand-dot"></span><span>سابقة أعمال وكالة <a class="malaz-link" href="https://malaz-sa.com/" target="_blank" rel="noopener noreferrer">ملاذ</a></span></div><nav><a href="#work">القطاعات</a><a href="#approach">كيف نعمل</a><a href="#about">عن الخبرة</a></nav><a class="nav-cta" href="#work">استكشف الأعمال <span>↙</span></a></header>
 <section class="hero" id="top"><div class="hero-grid"></div><div class="hero-copy"><p class="kicker"><span></span> PORTFOLIO 2026</p><h1>خبرة تتغيّر<br>مع كل <em>قطاع.</em></h1><p class="hero-lead">نعمل مع العلامات التي تبيع منتجًا، والتي تقدّم خدمة، والتي تخاطب صانع قرار. نفهم اختلاف الرحلة، ثم نبني حضورًا يناسبها.</p></div><div class="hero-proof"><div class="proof-orbit"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><strong>165<sup>+</sup></strong><small>علامة ومشروعًا</small></div><div class="proof-note"><b>من السعودية إلى الخليج</b><span>خبرات B2B و B2C عبر صناعات مختلفة.</span></div></div><div class="hero-stats"><div><strong>21</strong><span>قطاعًا رئيسيًا</span></div><div><strong>5</strong><span>مسارات تنفيذ متكاملة</span></div><div><strong>360°</strong><span>رؤية للعلامة والتجربة</span></div></div></section>
 <section class="intro" id="about"><p class="section-index">01 — منظورنا</p><div><h2>لا نستخدم نفس الحل<br>لكل البراندات.</h2><p>لأن قرار شراء عطر لا يشبه اختيار مكتب محاماة، وحجز حصة بيلاتس لا يشبه تبنّي نظام تقني داخل منشأة. تبدأ خبرتنا من فهم هذا الاختلاف.</p></div><blockquote>“نترجم طبيعة النشاط إلى حضور واضح، متّسق، وقابل للنمو.”</blockquote></section>
@@ -55,6 +90,33 @@ function filterProjects(){
  empty.hidden=shown!==0;
 }
 input.addEventListener('input',filterProjects);
+
+const portfolioFilters=[...document.querySelectorAll('.portfolio-filter')];
+let activePortfolioFilter='all';
+function portfolioGroup(card){
+ const t=(card.innerText+' '+card.dataset.search).toLowerCase();
+ if(/fitness|wellness|pilates|اللياقة|العافية/.test(t))return 'wellness';
+ if(/b2b|enterprise|professional|legal|financial|construction|consulting|تقنية|قانون|محاسبة|استشارات|مقاولات|تطوير/.test(t))return 'business';
+ return 'consumer';
+}
+function applyPortfolioFilters(){
+ const q=search.value.trim().toLowerCase();let visible=0;
+ cards.forEach(card=>{
+  const t=(card.innerText+' '+card.dataset.search).toLowerCase();
+  const matchText=!q||t.includes(q);
+  const matchGroup=activePortfolioFilter==='all'||portfolioGroup(card)===activePortfolioFilter;
+  card.hidden=!(matchText&&matchGroup);if(!card.hidden)visible++;
+ });
+ empty.hidden=visible!==0;
+}
+search.removeEventListener('input',filterProjects);
+search.addEventListener('input',applyPortfolioFilters);
+portfolioFilters.forEach(btn=>btn.addEventListener('click',()=>{
+ activePortfolioFilter=btn.dataset.filter;
+ portfolioFilters.forEach(b=>b.classList.toggle('active',b===btn));
+ applyPortfolioFilters();
+}));
+
 if(!reduceMotion && 'IntersectionObserver' in window){
  const observer=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
